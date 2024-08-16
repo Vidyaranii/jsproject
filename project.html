@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Simple Music Player</title>
+<!-- Load FontAwesome icons -->
+<link rel="stylesheet"
+		href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+<!-- Load the custom CSS style file -->
+<link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+<div class="player">
+
+	
+	<div class="details">
+<!-- 		
+		 <select class="search">
+			<option>search</option>
+			<option>SALAAR</option>
+			<option>TILLU2</option>
+			<option>MAD</option>
+			<option>Kalki</option>
+			<option>Poolamme Pilla</option>
+		 </select> -->
+	
+	<div class="now-playing">PLAYING </div>
+	<div class="song-art"></div>
+	<div class="song-name">Track Name</div>
+	<div class="song">Track Artist</div>
+	</div>
+
+	
+	<div class="buttons" onclick="repeata()">
+		<div class="repeat">
+			<img src="shuffle.png" width="30px">
+		</div>
+
+	<div class="prev" onclick="prevTrack()">
+		<i class="fa fa-step-backward fa-2x"></i>
+	</div>
+	<div class="playpause" onclick="playpauseTrack()">
+		<i class="fa fa-play-circle fa-3x"></i>
+	</div>
+	<div class="next" onclick="nextTrack()">
+		<i class="fa fa-step-forward fa-2x"></i>
+	</div>
+
+	<div class="vidya" onclick="shufflee()">
+		<img src="repeat.png" width="30px">
+	</div>
+
+
+	</div>
+
+	
+	<div class="slider_container">
+	<div class="current-time">00:00</div>
+	<input type="range" min="1" max="100"
+		value="0" class="seek_slider" onchange="seekTo()">
+	<div class="total-duration">00:00</div>
+	</div>
+
+	
+	<div class="slider_container">
+	<i class="fa fa-volume-down"></i>
+	<input type="range" min="1" max="100"
+		value="99" class="volume_slider" onchange="setVolume()">
+	<i class="fa fa-volume-up"></i>
+	</div>
+</div>
+
+
+<!-- Load the main script for the player -->
+<script src="project.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    /* background-color: lightgreen; */
+    
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+    }
+    
+
+    .player {
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   background-image: linear-gradient(#e6646430, #9198e59e);;
+   
+    }
+    
+    .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    
+    .song-art{
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+    background-image: URL(
+       "img.jpeg");
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 50%; */
+ 
+    }
+    
+  
+    .now-playing {
+    font-size: 1rem;
+    }
+    
+    .song-name {
+    font-size: 2.2rem;
+    }
+    
+    .song-artist {
+    font-size: 1.5rem;
+    }
+    
+  
+    .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    
+    .playpause,
+    .prev,
+    .next,.repeat {
+    padding: 10px;
+    opacity: 0.8;
+    
+ 
+    transition: opacity .2s;
+    }
+    
+   
+    /* Define the slider width so that it scales properly */
+    .slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    /* Modify the appearance of the slider */
+    .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    }
+    
+    
+   
+    
+    .seek_slider {
+    width: 70%;
+    }
+    
+    .volume_slider {
+    width: 30%;
+    }
+    
+    .current-time,
+    .total-duration {
+    padding: 8px;
+    }
+    
+    i.fa-volume-down,
+    i.fa-volume-up {
+    padding: 8px;
+    }
+    
+    /* Change the mouse cursor to a pointer
+    when hovered over */
+    i.fa-play-circle,
+    i.fa-pause-circle,
+    i.fa-step-forward,
+    i.fa-step-backward ,
+  img{
+    cursor: pointer;
+    }
+    
